@@ -1,0 +1,17 @@
+.card {
+    padding:15px;
+    border-radius: 15px;
+    border:1px solid red;
+    box-shadow: 0 4px 6px rgba(18, 141, 51, 0.1);
+    background-color: #F0ECE5;
+  }
+  .btn-submit {
+    width: 100%;
+  }
+  .kala{
+    color: #161A30;
+  }
+  .names{
+    color:#31304D;
+    font-weight: 500;
+  }
