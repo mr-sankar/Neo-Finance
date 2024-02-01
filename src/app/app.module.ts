@@ -13,7 +13,7 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
+
 import { RegisterAndLoginComponent } from './register-and-login/register-and-login.component';
 import { AddCardsComponent } from './add-cards/add-cards.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
@@ -25,18 +25,22 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import{MatStepperModule} from '@angular/material/stepper';
 import { CardDetailsComponent } from './card-details/card-details.component';
+import { LandingComponent } from './landing/landing.component';
 
-
+import {NgChartsModule} from 'ng2-charts';
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent,
+   
     RegisterAndLoginComponent,
     AddCardsComponent,
     MyProfileComponent,
     CardDetailsComponent,
+    LandingComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -55,9 +59,9 @@ import { CardDetailsComponent } from './card-details/card-details.component';
     MatStepperModule,
     AsyncPipe,
     HttpClientModule,
-    MatDatepickerModule
-  
-    
+    MatDatepickerModule,
+    NgChartsModule,
+    NgApexchartsModule
     
   ],
   providers: [],

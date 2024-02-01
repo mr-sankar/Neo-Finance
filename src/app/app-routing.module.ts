@@ -4,30 +4,25 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 
-import { NavbarComponent } from './navbar/navbar.component';
+
 import { RegisterAndLoginComponent } from './register-and-login/register-and-login.component';
 import { AddCardsComponent } from './add-cards/add-cards.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { CardDetailsComponent } from './card-details/card-details.component';
+import { LandingComponent } from './landing/landing.component';
 
 const routes: Routes = [
 
-      
-  {path:'registerLogin',component:RegisterAndLoginComponent},
-  {path:'',component:HomeComponent, 
-   children : [
-
-  {path:'add-cards',component:AddCardsComponent},
-  {path:'navbar',component:NavbarComponent,},
-  {path:'myprofile',component:MyProfileComponent},
-  {path:'card',component:CardDetailsComponent}
-   ]
+  {path:'',component:LandingComponent},
+ 
+  {path:'registerAndLogin',component:RegisterAndLoginComponent},
+  {path:'home',component:HomeComponent,
+  children:[
+  {path:'offers',component:AddCardsComponent},
+  {path:'cardDetails',component:CardDetailsComponent}
+  ]
 }
-
-
-
-
-
+  
 ];
 
 @NgModule({

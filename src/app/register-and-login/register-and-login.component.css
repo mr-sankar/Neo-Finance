@@ -7,15 +7,16 @@ body{
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
 	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    /* background-color: rgb(55,81,126); */
 }
 .main{
-	width: 400px;
-	height: 550px;
-	background: red;
+	width: 350px;
+	height: 500px;
+	/* background: red; */
 	overflow: hidden;
 	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
 	border-radius: 10px;
-	box-shadow: 5px 20px 50px #000;
+	box-shadow: 5px 20px 50px whitesmoke;
 }
 #chk{
 	display: none;
@@ -35,33 +36,8 @@ label{
 	cursor: pointer;
 	transition: .5s ease-in-out;
 }
-#MisMatch{
-    position: relative;
-    top: -50px;
-    font-size: 18px;
-    padding: 10px 40px;
-    
-}
-#btn1{
-    padding: 12px 100px;
-    
-    font-weight: 600;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 22px;
-    border-radius: 10px;
-}
-
-#inputs{
-position: relative;
-top: -40px;
-}
-.inputs2{
-    position: relative;
-    top: -60px ;
-}
-input{
-	/* width: 60%;
-	height: 20px;
+/* .LInput{
+	
 	background: #e0dede;
 	justify-content: center;
 	display: flex;
@@ -69,10 +45,63 @@ input{
 	padding: 10px;
 	border: none;
 	outline: none;
-	border-radius: 5px; */
-   
+	border-radius: 5px;
+} */
+.p{
+	position: relative;
+	left: -250px;
+	top: -20px;
+	font-size: 20px;
+	font-family: cursive;
+	color: white;
+	width: 600px;
 }
-.button{
+
+#leftArrow{
+	border-color: red;
+	color: red;
+	font-size: 40px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+#logo{
+    position: relative;
+    left: -30px;
+    top: -220px;
+    color: rgb(98, 149, 149);
+    height: 70px ;
+    width: 220px;
+}
+.LInputsAll{
+    position: relative;
+    left: 70px;
+    top: -30px;
+}
+.rinputs{
+    position: relative;
+    top: -105px ;
+    left: 70px;
+}
+.signLabel{
+    position: relative;
+    top: -55px;
+}
+#MisMatch{
+    position: relative;
+    top: -55px;
+    left: -65px;
+    font-size: 20px;
+
+}
+#submit{
+    padding: 25px 100px;
+    position: relative;
+    left: -20px;
+    top: -5px;
+
+}
+.button1{
 	width: 60%;
 	height: 40px;
 	margin: 10px auto;
@@ -88,28 +117,39 @@ input{
 	border-radius: 5px;
 	transition: .2s ease-in;
 	cursor: pointer;
+    margin-top: -10px;
 }
 button:hover{
 	background: #6d44b8;
 }
 .login{
-	height: 500px;
+	height: 460px;
 	background: #eee;
 	border-radius: 60% / 10%;
 	transform: translateY(-180px);
 	transition: .8s ease-in-out;
 }
-.login label{
+.login label {
 	color: #573b8a;
 	transform: scale(.6);
 }
 
 #chk:checked ~ .login{
-	transform: translateY(-580px);
+	transform: translateY(-557px);
 }
 #chk:checked ~ .login label{
 	transform: scale(1);	
+
 }
 #chk:checked ~ .signup label{
 	transform: scale(.6);
 }
+@media only screen and (max-width: 671px) {
+	.p{
+		display: none;
+	}
+	#logo{
+		display: none;
+	}
+}
+	
