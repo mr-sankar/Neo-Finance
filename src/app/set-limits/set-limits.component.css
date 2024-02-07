@@ -1,0 +1,9 @@
+mat-slider {
+    width: 300px;
+  }
+  .box{
+    border: 1px solid grey;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+  }

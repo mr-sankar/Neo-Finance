@@ -1,5 +1,6 @@
-<mat-sidenav-container class="sidenav-container">
+<mat-sidenav-container class="sidenav-container " id="sidenav">
   <mat-sidenav
+id="sai"
     #drawer
     class="sidenav"
     fixedInViewport
@@ -7,27 +8,38 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false"
   >
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>
+        <!----------------------- Logo-------------------------------------- -->
+        <a routerLink="#" class="position-absolute top-0"
+          ><img
+            id="logo"
+            src="assets\log1.png"
+            class="position-absolute top-1 start-10"
+            alt=""
+            height="60px"
+            width="100px"
+        /></a>
+    </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['home']">
-        <i class="fa-sharp fa-solid fa-house me-1"></i> Home
+      <a mat-list-item id="sidenavLists"  [routerLink]="['/home/']">
+        <i class="fa-sharp fa-solid fa-house me-1"></i> Dashboard  
       </a>
-      <a mat-list-item [routerLink]="['#']"
+      <a mat-list-item id="sidenavLists"  [routerLink]="['SetLimits']"
         ><i class="fa-brands fa-stack-overflow me-2"></i>Set Limits</a
       >
-      <a mat-list-item [routerLink]="['offers']"
+      <a mat-list-item  id="sidenavLists" [routerLink]="['offers']"
         ><i class="fa-solid fa-gifts me-2"></i>Offers</a
       >
-      <a mat-list-item [routerLink]="['addcards']"
+      <a mat-list-item  id="sidenavLists" [routerLink]="['cardDetails']"
         ><i class="fa-regular fa-credit-card me-1"></i> Add Cards</a
       >
-      <a mat-list-item [routerLink]="['#']"
-        ><i class="fa-solid fa-file-invoice me-2"></i>Upload Bills
+      <a mat-list-item  id="sidenavLists" [routerLink]="['upload_file']"
+        ><i class="fa-solid fa-file-invoice me-2"></i>Upload Statements
       </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar id="top">
       @if (isHandset$ | async) {
       <button
         type="button"
@@ -39,16 +51,7 @@
       </button>
       }
       <div>
-        <!----------------------- Logo-------------------------------------- -->
-        <a routerLink="#" class="position-absolute top-0"
-          ><img
-            id="logo"
-            src="assets\log1.png"
-            class="position-absolute top-1 start-10"
-            alt=""
-            height="60px"
-            width="100px"
-        /></a>
+      
         <!-- ------------------------Search Box-------------------------------- -->
 
         <form class="  " id="search">
@@ -61,27 +64,21 @@
       <div class="nav-items">
         <div class="dropdown">
           <button
-            class="btn btn-secondary"
+            class="btn btn-outline-dark"
             type="button"
             id="userdropdown"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-user"></i>User
           </button>
           <ul class="dropdown-menu ul2" aria-labelledby="userdropdown">
             <li class="dropdown-item">
-              <a class="text-decoration-none text-info" routerLink="#">
-                My Details</a
-              >
+              <a class="text-decoration-none text-info" routerLink="MyProfile" >
+                My Profile</a>
             </li>
             <li class="dropdown-item">
-              <a class="text-decoration-none text-info" routerLink="#">
-                MY Cards
-              </a>
-            </li>
-            <li class="dropdown-item">
-              <a routerLink="#" class="text-decoration-none text-info"
+              <a (click)="logout()" class="text-decoration-none text-info"
                 >Logout</a
               >
             </li>
@@ -96,16 +93,17 @@
 
 <!---------------------------------------------------------- pie chart------------------------------------------------------------ -->
 
-<div>
-  <div *ngIf="isHandset$ | async">Handset View</div>
-  <div *ngIf="!(isHandset$ | async)">Desktop View</div>
-</div>
+<!-- <div class="row">
+  <div class="col-md-7">
+<h1>hello</h1>
+  </div>
+  <div class="col-md-5">
+    <div>
+      <div *ngIf="isHandset$ | async">Handset View</div>
+      <div *ngIf="!(isHandset$ | async)">Desktop View</div>
+    </div>
+  </div>
+</div> -->
 
-<div style="width: 100%; max-width: 600px;">
-  <ng-apexcharts #chart
-                [series]="chartOptions.series"
-                [chart]="chartOptions.chart"
-                [labels]="chartOptions.labels"
-                [responsive]="chartOptions.responsive">
-  </ng-apexcharts>
-</div>
+
+

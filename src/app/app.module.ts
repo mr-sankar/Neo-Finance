@@ -28,7 +28,13 @@ import { CardDetailsComponent } from './card-details/card-details.component';
 import { LandingComponent } from './landing/landing.component';
 
 import {NgChartsModule} from 'ng2-charts';
-import { NgApexchartsModule } from 'ng-apexcharts';
+import { MainComponent } from './main/main.component';
+import { UploadFilesComponent } from './upload-files/upload-files.component';
+import { SetLimitsComponent } from './set-limits/set-limits.component';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatChipsModule } from '@angular/material/chips';
+import {MatCardModule} from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -40,6 +46,9 @@ import { NgApexchartsModule } from 'ng-apexcharts';
     MyProfileComponent,
     CardDetailsComponent,
     LandingComponent,
+    MainComponent,
+    UploadFilesComponent,
+    SetLimitsComponent,
     
   ],
   imports: [
@@ -60,9 +69,12 @@ import { NgApexchartsModule } from 'ng-apexcharts';
     AsyncPipe,
     HttpClientModule,
     MatDatepickerModule,
+    MatSliderModule,
     NgChartsModule,
-    NgApexchartsModule
-    
+    MatChipsModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

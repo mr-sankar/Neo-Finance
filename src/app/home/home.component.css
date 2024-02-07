@@ -1,6 +1,8 @@
 .sidenav-container {
     height: 100%;
+   
   }
+  
   
   .sidenav {
     width: 200px;
@@ -20,26 +22,39 @@
   
   }
 
+  #top{
+    background-color: rgb(55,81,126);
+    color: rgb(55,81,126);
+    
+    
+  }
   /* pie charts */
  
   
   /* --------------------------------------------------big screen--------------------------------------------------------------- */
   @media only screen and (min-width: 961px) {
-   
+   #sidenav{
+    background-color: rgba(255,255,255,0.3);
+   }
+   #sai{
+    background-color: rgba(233, 232, 232, 0.3);
+   }
     .ul2 {
      background-color:rgb(17, 16, 14);
 
     }
+    #sidenavLists{
+      margin-top: 20px;
+    }
     #userdropdown{
         position: relative;
-      left: 300px;
-      border: 1px solid whitesmoke;
+       
+      left: 250px;
+      border: 1px solid rgb(0, 0, 0);
       border-radius: 20px;
-      box-shadow: 2px 3px rgb(39, 38, 38);
-      background-color: rgb(63,81,181);
-
+      /* box-shadow: 2px 3px rgb(39, 38, 38); */
+      color: whitesmoke;
     }
-  
   .nav-items{
     position: relative;
     left: 950px;
@@ -53,6 +68,127 @@
     left: 350px;
     right: 300px;
   }
+  /* kavya */
+  #navbar{
+    padding-left: 900px;
+   background-color: blue;
+ }
+ .hero-carousel .carousel-inner .carousel-item {
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Medium height */
+  }
+  .hero-carousel .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .hero-carousel h1, .hero-carousel p {
+    color: #fff;
+  }
+  .features {
+    
+    padding: 50px 0;
+  }
+  .feature-item {
+    text-align: center;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 1px 1px ;
+    background-color: #C9D7DD;
+  
+    
+  }
+  .feature-item:hover{
+    animation: head_Shake;
+    background-color: #F0ECE5;;
+  }
+ 
+  .feature-icon {
+    font-size: 48px;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  .feature-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #31304D;
+    text-decoration: none;
+  }
+  .feature-description {
+    font-size: 16px;
+    color: #555;
+  }
+  .testimonial {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  .testimonial-item {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .testimonial-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  .testimonial-content {
+    font-style: italic;
+  }
+  .pie-chart {
+    padding: 50px 0;
+  }
+  .chart-container {
+    width: 300px;
+    height: 300px;
+  }
+  .chart-info {
+    padding: 20px;
+  }
+  .text{
+    color: #31304D;
+  }
+  
+  .image{
+    border:1px solid grey;
+    border-radius: 20px;
+    padding:30px;
+  }
+  .image:hover{
+    background-color: #C9D7DD ;
+    animation-duration: 5s;
+    animation: bounce;
+    transform: scale(1.1,1.1);
+  }
+  .bg{
+    background-color: #F0ECE5;
+  }
+  .offers{
+    background-color: #F0ECE5;
+  }
+  .line{
+    text-decoration: none;
+  }
+  .picheight{
+    height: 200px;
+    
+  }
+  
+  .shad{
+    transform: translate(-3%, -3%);
+    background: white;
+    text-align:center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 5px #C9D7DD;
+    
+  }
+  #logo{
+    width: 150px;
+  }
+ 
+
+  
   
   }
   /* --------------------------------------------------small screen--------------------------------------------------------------- */
@@ -60,8 +196,8 @@
     #search{
       display: none;
     }
-    #logo{
-      display: none;
+    #top{
+      background-color: aquamarine;
     }
     #userdropdown{
         position: relative;

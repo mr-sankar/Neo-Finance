@@ -1,17 +1,102 @@
-.card {
-    padding:15px;
-    border-radius: 15px;
-    border:1px solid red;
-    box-shadow: 0 4px 6px rgba(18, 141, 51, 0.1);
-    background-color: #F0ECE5;
-  }
+@media only screen and (min-width: 771px) {
+
   .btn-submit {
     width: 100%;
+   
+   margin-bottom: -70px;
   }
   .kala{
     color: #161A30;
   }
   .names{
-    color:#31304D;
+    margin-top: 10px;
+    color:black;
     font-weight: 500;
   }
+  #img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 670px;
+    width: 1300px;
+}
+.card {
+  box-shadow: 5px 20px 50px whitesmoke;
+  padding:15px;
+  position: relative;
+  top: -650px;
+  left:-10px;
+  border: 2px solid grey;
+  color: rgb(64, 64, 193);
+  border-radius: 15px;
+}
+.section{
+  width: 80px;
+}
+#cardNumber2{
+  position:relative ;
+  left: 90px;
+  top: -38px;
+}
+#cardNumber3{
+  position:relative ;
+  left: 180px;
+  top: -76px;
+}
+#cardNumber4{
+  position:relative ;
+  left: 270px;
+  top: -114px;
+}
+.footer{
+  position: relative;
+  top: -100px;
+}
+
+}
+@media only screen and (max-width: 671px) {
+img{
+  display: none;
+}
+#AtmImg{
+  display: none;
+}
+.card {
+  
+  padding:15px;
+  border: 2px solid grey;
+  color: rgb(64, 64, 193);
+  border-radius: 15px;
+}
+#cardNumber1{
+  width: 80px;
+}
+#cardNumber2{
+  width: 80px; position: relative;
+  top:-37px;
+  left: 80px;
+}
+#cardNumber3{
+  width: 80px;
+  position: relative;
+  top:-75px;
+  left: 160px;
+}
+#cardNumber4{
+  width: 80px;
+  position: relative;
+  top:-110px;
+  left: 245px;
+}
+#posi{
+  position: relative;
+  top:-100px;
+}
+#limt{
+  position: relative;
+  top: -80px;
+}
+}
+
+
+

@@ -1,0 +1,163 @@
+{ 
+ "username" : "Sankar",
+ "cardDetails" :[
+  { 
+ "cardNumber" : 1234123412341234,
+ "cardId" : 1,
+ "statementDetails" : [
+ {
+	 "cardId": 1,
+	 "statementId": 1,
+	 "month": "Dec 2023",
+	 "data": [
+	 {
+		 "transactionDate" : "7/12/2023",
+		 "transactionAmount" : 500,
+		 "category" : "Accommodation"
+	 },
+	 {
+		"transactionDate" : "12/12/2023",
+		"transactionAmount" : 500,
+		"category" : "Personal Care"
+	}, {
+		"transactionDate" : "24/12/2023",
+		"transactionAmount" : 500,
+		"category" : "Entertainment"
+	}, {
+		"transactionDate" : "29/12/2023",
+		"transactionAmount" : 500,
+		"category" : "Transport"
+	}
+	]
+ },
+ {
+	"cardId": 1,
+	"statementId": 2,
+	"month": "Jan 2024",
+	"data": [
+	{
+		"transactionDate" : "07/01/2024",
+		"transactionAmount" : 500,
+		"category" : "Accommodation"
+	},
+	{
+	   "transactionDate" : "15/01/2024",
+	   "transactionAmount" : 500,
+	   "category" : "Personal Care"
+   }, {
+	   "transactionDate" : "19/01/2024",
+	   "transactionAmount" : 500,
+	   "category" : "Transport"
+   }, {
+	   "transactionDate" : "22/01/2024",
+	   "transactionAmount" : 500,
+	   "category" : "Entertainment"
+   }
+   ]
+},
+{
+	"cardId": 2	,
+	"statementId": 1,
+	"month": "Feb 2024",
+	"data": [
+	{
+		"transactionDate" : "01/02/2024",
+		"transactionAmount" : 500,
+		"category" : "Personal Care"
+	},
+	{
+	   "transactionDate" : "02/02/2024",
+	   "transactionAmount" : 500,
+	   "category" : "Entertainment"
+   }, {
+	   "transactionDate" : "02/02/2024",
+	   "transactionAmount" : 500,
+	   "category" : "Transport"
+   }, {
+	   "transactionDate" : "05/02/2024",
+	   "transactionAmount" : 500,
+	   "category" : "Accommodation"
+   }
+   ]
+},
+{
+	"cardId": 2,
+	"statementId": 2,
+	"month": "Nov 2023",
+	"data": [
+	{
+		"transactionDate" : "7/11/2023",
+		"transactionAmount" : 500,
+		"category" : "Transport"
+	},
+	{
+	   "transactionDate" : "9/11/2024",
+	   "transactionAmount" : 500,
+	   "category" : "Entertainment"
+   }, {
+	   "transactionDate" : "12/11/2024",
+	   "transactionAmount" : 500,
+	   "category" : "Accommodation"
+   }, {
+	   "transactionDate" : "29/11/2024",
+	   "transactionAmount" : 500,
+	   "category" : "Personal Care"
+   }
+   ]
+},
+{
+	"cardId": 1,
+	"statementId": 3,
+	"month": "Oct 2023",
+	"data": [
+	{
+		"transactionDate" : "2/10/2023",
+		"transactionAmount" : 500,
+		"category" : "Accommodation"
+	},
+	{
+	   "transactionDate" : "15/10/2023",
+	   "transactionAmount" : 500,
+	   "category" : "Transport"
+   }, {
+	   "transactionDate" : "19/10/2023",
+	   "transactionAmount" : 500,
+	   "category" : "Personal Care"
+   }, {
+	   "transactionDate" : "22/10/2023",
+	   "transactionAmount" : 500,
+	   "category" : "Entertainment"
+   }
+   ]
+},
+{
+	"cardId": 1,
+	"statementId": 2,
+	"month": "Sep 2023",
+	"data": [
+	{
+		"transactionDate" : "07/9/2023",
+		"transactionAmount" : 500,
+		"category" : "Personal Care"
+	},
+	{
+	   "transactionDate" : "15/9/2023",
+	   "transactionAmount" : 500,
+	   "category" : "Accommodation"
+   }, {
+	   "transactionDate" : "19/9/2023",
+	   "transactionAmount" : 500,
+	   "category" : "Entertainment"
+   }, {
+	   "transactionDate" : "22/9/2023",
+	   "transactionAmount" : 500,
+	   "category" : "Transport"
+   }
+   ]
+}
+]
+ 
+}
+  
+ ]
+}

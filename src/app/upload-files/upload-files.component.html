@@ -1,0 +1,79 @@
+<!-- 
+
+   
+<div class="container-fluid">
+   
+   <div class="row mt-5">
+       <div class="col-md-4"></div>
+    <div class="col-md-4" id="card">
+      
+       <h1 class=" name"> UPLOAD STATEMENT FILE</h1>
+       <br>
+       <br>
+       <form action="" ngNativeValidate #form>
+     <span class="fileInput"><input type="file" class="btn" (change)="onFileChange($event)" /></span> <br> <br>
+   
+ <div class="form-group mt-4">
+   <mat-form-field class="example-full-width" id="card_id">
+     <mat-label ><i class="fa-regular fa-credit-card me-2"></i>card id</mat-label>
+     <input matInput placeholder="Ex. 1" name="UserName" [(ngModel)]="card_id" required=""/>
+   </mat-form-field>
+ </div>
+       <button mat-raised-button color="primary" type="submit" (click)="form.checkValidity() ? convertToJson() : null" class="button1"> Upload </button>
+      </form>
+    </div>
+    <div class="col-md-4"></div>
+   </div>
+   </div>
+    -->
+
+
+<body>
+	<div class="container">
+		<div class="forms-container">
+			<div class="signin-signup">
+				<form action="#" class="sign-in-form">
+					<h2 class="title"> Upload file</h2>
+
+					<div>
+            
+            <input matInput placeholder="card id" name="UserName" id="card_id1" [(ngModel)]="card_id" required=""/>
+            <input type="file" class=" fileInput" (change)="onFileChange($event)" />
+          </div>
+					<input type="submit"  (click)="convertToJson()" class="btn solid" />
+			
+				</form>
+				
+			</div>
+		</div>
+
+		<div class="panels-container">
+			<div class="panel left-panel">
+				<div class="content">
+					<h3>Upload Statement </h3>
+					<p>
+            Welcome to Neo Finance We appreciate your collaboration and the files you are about to upload.
+					</p>
+					
+				</div>
+				<img  src="https://i.ibb.co/6HXL6q1/Privacy-policy-rafiki.png" class="image" alt="" />
+			</div>
+		
+		</div>
+	</div>
+
+	<script >const sign_in_btn = document.querySelector("#sign-in-btn");
+    const sign_up_btn = document.querySelector("#sign-up-btn");
+    const container = document.querySelector(".container");
+    
+    sign_up_btn.addEventListener("click", () => {
+      container.classList.add("sign-up-mode");
+    });
+    
+    sign_in_btn.addEventListener("click", () => {
+      container.classList.remove("sign-up-mode");
+    });</script>
+</body>
+
+   
+   

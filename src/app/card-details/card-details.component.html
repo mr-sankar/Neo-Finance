@@ -1,122 +1,93 @@
-<div class="container-fluid cards">
-  <div class="row">
-    <div class="col-md-4"></div>
+<body>
+  <img
+    id="img"
+    src="https://images.hdqwalls.com/wallpapers/abstract-simple-background-4k-lp.jpg"
+    alt=""
+  />
+  <div class="container-fluid cards">
+    <div class="row">
+      <div class="col-md-4"></div>
 
-    <div class="col-md-4 p-3">
-      <div class="card">
-        <h2 class="text-center mb-4 text-#161A30 kala">Credit Card Details</h2>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-2">
-              <img
-                src="https://www.hdfcbank.com/content/api/contentstream-id/723fb80a-2dde-42a3-9793-7ae1be57c87f/c3bbd7ad-6a6e-4c7b-92f9-319d5859567c/Personal/Pay/Cards/Credit%20Card/Credit%20Card%20Landing%20Page/Credit%20Cards/Super%20Premium/Regalia/Regalia-MC.png"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-md-2">
-              <img
-                src="https://www.sbicard.com/sbi-card-en/assets/media/images/personal/credit-cards/value-savings/card-faces/thumb-simplyclick-card-face.png"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-md-2">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZKOogTybHl9BHv7K0kcPTnL49jImQQR5QBA&usqp=CAU"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-md-2">
-              <img
-                src="https://www.paisabazaar.com/wp-content/uploads/2018/05/Capture.jpg"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-md-2">
-              <img
-                src="https://www.kotak.com/content/dam/Kotak/Product-Card-Images-Mobile/fortune-gold-credit-card.jpg"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-        <form>
-          <div class="form-group">
-            <label for="username" class="form-label names">Username</label>
-            <input
-              type="text"
-              class="form-control"
-              id="username"
-              placeholder="Enter username"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="cardNumber " class="form-label names"
-              >Card Number</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="cardNumber"
-              placeholder="Enter card number"
-              required
-            />
-          </div>
-          <div class="container">
+      <div class="col-md-4 p-3 card1">
+
+        <div class="card " style="background-color: rgba(255, 0, 0,0.1);">
+
+          <h2 class="text-center mb-4 text-#161A30 kala">
+            Credit Card Details
+          </h2>
+          <div class="container-fluid">
             <div class="row">
-              <div class="form-group col-md-6">
-                <label for="cardCVV" class="form-label names">Card CVV</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="cardCVV"
-                  placeholder="Enter CVV"
-                  required
+              <div class="col-md-1"></div>
+              <div class="col-md-2">
+                <img
+                  src="https://www.hdfcbank.com/content/api/contentstream-id/723fb80a-2dde-42a3-9793-7ae1be57c87f/c3bbd7ad-6a6e-4c7b-92f9-319d5859567c/Personal/Pay/Cards/Credit%20Card/Credit%20Card%20Landing%20Page/Credit%20Cards/Super%20Premium/Regalia/Regalia-MC.png"
+                  class="img-fluid" id="AtmImg"
                 />
               </div>
-              <div class="form-group col-md-6">
-                <label for="cardYear" class="form-label names"
-                  >Expiration Year</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="cardYear"
-                  placeholder="Enter expiration year"
-                  required
+              <div class="col-md-2">
+                <img
+                  src="https://www.sbicard.com/sbi-card-en/assets/media/images/personal/credit-cards/value-savings/card-faces/thumb-simplyclick-card-face.png"
+                  class="img-fluid" id="AtmImg"
+                />
+              </div>
+              <div class="col-md-2">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZKOogTybHl9BHv7K0kcPTnL49jImQQR5QBA&usqp=CAU"
+                  class="img-fluid" id="AtmImg"
+                />
+              </div>
+              <div class="col-md-2">
+                <img
+                  src="https://www.paisabazaar.com/wp-content/uploads/2018/05/Capture.jpg"
+                  class="img-fluid" id="AtmImg"
+                />
+              </div>
+              <div class="col-md-2">
+                <img
+                  src="https://www.kotak.com/content/dam/Kotak/Product-Card-Images-Mobile/fortune-gold-credit-card.jpg"
+                  class="img-fluid" id="AtmImg"
                 />
               </div>
             </div>
           </div>
-          <div class="form-group">
-            <label for="cardName" class="form-label names"
-              >Cardholder Name</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="cardName"
-              placeholder="Enter cardholder name"
-              required
-            />
+          <form action="" ngNativeValidate #form>
+            <div class="form-group">
+              <label  class="form-label names">userName</label>
+              <input type="text" class="form-control" id="username" name="userName"  value="{{userName}}" disabled />
+            </div>
+            <div class="form-group " >
+              <label for="cardNumber " class="form-label names">Card Number</label>
+              <div class="section">
+              <input class="form-control" id="cardNumber1" placeholder="Enter" name="cardNUmber"  pattern="[0-9]{4}" [(ngModel)]="section1" required type="text"/>
+              <input class="form-control" id="cardNumber2" placeholder="card" name="cardNUmber"  pattern="[0-9]{4}" [(ngModel)]="section2" required type="tex"/>
+              <input class="form-control" id="cardNumber3" placeholder="number" name="cardNUmber"  pattern="[0-9]{4}" [(ngModel)]="section3" required type="text"/>
+              <input class="form-control" id="cardNumber4" placeholder="" name="cardNUmber"  pattern="[0-9]{4}" [(ngModel)]="section4" required type="text"/>
+            </div>
+            </div>
+            <div class="footer">   
+            <div class="container">
+              <div class="row" id="posi">
+                <div class="form-group col-md-6">
+                  <label for="cardCVV" class="form-label names">Card id</label>
+                  <input type="text"class="form-control"id="cardCVV" name="cvv" [(ngModel)]="card_id" placeholder="Enter card_id" required/>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="cardYear" class="form-label names">Expiration Year</label>
+                  <input type="date" class="form-control"  id="cardYear" name="exdate" [(ngModel)]="exdate" placeholder="Enter expiration year"  required/>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group" id="limt">
+              <label for="cardLimit" class="form-label names">Set Card Limit</label>
+              <input type="text" class="form-control" id="cardLimit" name="limit" placeholder="Enter card limit" [(ngModel)]="limit" required/>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary btn-submit"  (click)="form.checkValidity() ? AddCard() : null"> Submit </button>
           </div>
-          <div class="form-group">
-            <label for="cardLimit" class="form-label names">Card Limit</label>
-            <input
-              type="text"
-              class="form-control"
-              id="cardLimit"
-              placeholder="Enter card limit"
-              required
-            />
-          </div>
-          <br />
-          <button type="submit" class="btn btn-primary btn-submit">
-            Submit
-          </button>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</body>
